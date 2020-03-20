@@ -4,15 +4,15 @@ using UnityEngine;
 public class Bloons : MonoBehaviour{
 
     // Variables
-    public GameObject popSound;
-    public GameObject bloonCountDisplay;
+    //public GameObject popSound;
+    //public GameObject bloonCountDisplay;
     public GameObject[] wayPoints;
-    public GameObject[] wayPoints2;
+    //public GameObject[] wayPoints2;
     private int nextWayPointIndex = 0;
     public int health = 1;
     public float speed = 1;
-    private Material m_Material;
-    int CompareObNames(GameObject x, GameObject y){
+   // private Material m_Material;
+   /* int CompareObNames(GameObject x, GameObject y){
         return x.name.CompareTo(y.name);
     }
 
@@ -33,15 +33,15 @@ public class Bloons : MonoBehaviour{
 
         // Get bloonCountDisplay
         bloonCountDisplay = GameObject.FindGameObjectWithTag("BloonCountDisplay");
-    }
+    } */
 
     // Call Update Once Per Frame
     void Update(){
         MoveBloon();
-        ColorBloons();
+        //ColorBloons();
     }
 
-    private void ColorBloons(){
+  /*  private void ColorBloons(){
         if (health == 3){
             m_Material.color = ColorBloons.red;
         }
@@ -63,7 +63,7 @@ public class Bloons : MonoBehaviour{
                 Destroy(this.gameObject);
             }
         }
-    }
+    }*/
 
     private void MoveBloon(){
         var lastWayPointIndex = wayPoints.Length -1;
@@ -75,17 +75,17 @@ public class Bloons : MonoBehaviour{
         if (Vector3.Distance(transform.position, lastWayPoint) > 0.1f)
         {
             // Move to next waypoint
-            transform.Translate(direction.normalized * speed * Time.deltaTime, ConsoleSpecialKey.World);
+            transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
         }
 
         // If the Bloon reaches one waypoint increase index
-        if (Vector3.Distance(transform.position, nextWayPoint) < 0.5f && nextWayPointIndex < lastWayPointIndex < lastWayPointIndex){
+        if (Vector3.Distance(transform.position, nextWayPoint) < 0.5f && nextWayPointIndex < lastWayPointIndex){
             nextWayPointIndex++;
         }
 
         // Bloon at the Finish
         if (nextWayPointIndex == lastWayPointIndex && Vector3.Distance(transform.position, lastWayPoint) < 0.5f){
-            bloonCountDisplay.GetComponent<DisplayText>().LivesDecrease();
+            //bloonCountDisplay.GetComponent<DisplayText>().LivesDecrease();
             Destroy(this.gameObject);
         }
     }
