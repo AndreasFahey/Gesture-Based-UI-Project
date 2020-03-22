@@ -12,20 +12,20 @@ public class Bloons : MonoBehaviour{
     public int health = 1;
     public float speed = 1;
     private Material m_Material;
-   /* int CompareObNames(GameObject x, GameObject y){
+    int CompareObNames(GameObject x, GameObject y){
         return x.name.CompareTo(y.name);
     }
-*/
+
     private void Start(){
-       // var random = UnityEngine.Random.Range(0, 2);
-       // if(random == 0){
+        var random = UnityEngine.Random.Range(0, 2);
+        if(random == 0){
             wayPoints = GameObject.FindGameObjectsWithTag("Waypoints");
-       //     Array.Sort(wayPoints, CompareObNames);
-      //  }
-      //  else{
-     //       wayPoints = GameObject.FindGameObjectsWithTag("Waypoints2");
-      //      Array.Sort(wayPoints, CompareObNames);
-     //   }
+            Array.Sort(wayPoints, CompareObNames);
+        }
+        else{
+            wayPoints = GameObject.FindGameObjectsWithTag("Waypoints2");
+            Array.Sort(wayPoints, CompareObNames);
+        }
         m_Material = GetComponent<Renderer>().material;
 
         // Get the sound component
@@ -38,12 +38,12 @@ public class Bloons : MonoBehaviour{
     // Call Update Once Per Frame
     void Update(){
         MoveBloon();
-        //ColorBloons();
+        ColorBloons();
     }
 
-  /*  private void ColorBloons(){
+    private void ColorBloons(){
         if (health == 3){
-            m_Material.color = ColorBloons.red;
+            m_Material.color = Color.red;
         }
         else if (health == 2){
             m_Material.color = Color.blue;
@@ -51,7 +51,7 @@ public class Bloons : MonoBehaviour{
         else if (health == 1){
             m_Material.color = Color.green; 
         }
-    }*/
+    }
 
     private void OnTriggerEnter(Collider other){
         if(other.CompareTag("Dart"))
@@ -59,13 +59,7 @@ public class Bloons : MonoBehaviour{
             health--;
             //bloonCountDisplay.GetComponent<DisplayText>().BloonPopIncrease();
             //popSound.GetComponent<PopSound>().PlayPop();
-            if (health == 2){
-            m_Material.color = Color.blue;
-            }
-            else if (health == 1){
-            m_Material.color = Color.green; 
-            }
-            else if (health <= 0){
+            if (health <= 0){
             
                 Destroy(this.gameObject);
             }

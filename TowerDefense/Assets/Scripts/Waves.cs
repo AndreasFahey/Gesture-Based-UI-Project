@@ -7,7 +7,7 @@ public class Waves : MonoBehaviour
     public float difficulty = 0.5f;
     public float difficultyIncreaseSpeed = 0.01f;
     public Transform startPosition;
-    public GameObject bloonGreen;
+    public GameObject BloonGreen;
 
     // Timers for waves
     private float bloonTimer = 0f;
@@ -31,9 +31,9 @@ public class Waves : MonoBehaviour
             difficulty += difficultyIncreaseSpeed;
             bloonTimer = Time.time + nextBloon;
  
-                var bloon =  Instantiate(bloonGreen, startPosition.position, bloonGreen.transform.rotation);
-                bloon.GetComponent<Bloon>().health += (int)System.Math.Round(difficulty);
-                bloon.GetComponent<Bloon>().speed += (int)System.Math.Round(difficulty);
+                var bloon =  Instantiate(BloonGreen, startPosition.position, BloonGreen.transform.rotation);
+                bloon.GetComponent<Bloons>().health += (int)System.Math.Round(difficulty);
+                bloon.GetComponent<Bloons>().speed += (int)System.Math.Round(difficulty);
         }
 
         // Make the Waves
