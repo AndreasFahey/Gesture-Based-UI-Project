@@ -2,7 +2,10 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Bloons
+    - DartGun
     - ONSPSettings
+    Oculus.VR.Editor.dll:
+    - OVRConfig
     Oculus.VR.dll:
     - OVRCameraRig
     - OVRDebugInfo
@@ -37,6 +40,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -67,6 +72,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12882}
     - Class: 114
       Script: {instanceID: 13164}
+    - Class: 114
+      Script: {instanceID: 13548}
+    - Class: 114
+      Script: {instanceID: 13768}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -1372,6 +1381,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: b00ce1f32326f1cd1160488ffd14965a
+    assemblyName: Oculus.VR.Editor.dll
+    namespaceName: 
+    className: OVRConfig
+  - hash:
+      serializedVersion: 2
       Hash: 8b9f42d72019bde2f9fe0667762eaff3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1448,6 +1463,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Oculus.Platform.Samples.VrVoiceChat
     className: VREyeRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: fb68f33f40155dd9a3dbc9a24303329d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DartGun
   - hash:
       serializedVersion: 2
       Hash: 0206d628903d330ab486ebffa9dc4292

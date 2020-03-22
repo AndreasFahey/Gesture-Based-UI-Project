@@ -11,29 +11,29 @@ public class Bloons : MonoBehaviour{
     private int nextWayPointIndex = 0;
     public int health = 1;
     public float speed = 1;
-   // private Material m_Material;
+    private Material m_Material;
    /* int CompareObNames(GameObject x, GameObject y){
         return x.name.CompareTo(y.name);
     }
-
+*/
     private void Start(){
-        var random = UnityEngine.Random.Range(0, 2);
-        if(random == 0){
+       // var random = UnityEngine.Random.Range(0, 2);
+       // if(random == 0){
             wayPoints = GameObject.FindGameObjectsWithTag("Waypoints");
-            Array.Sort(wayPoints, CompareObNames);
-        }
-        else{
-            wayPoints = GameObject.FindGameObjectsWithTag("Waypoints2");
-            Array.Sort(wayPoints, CompareObNames);
-        }
+       //     Array.Sort(wayPoints, CompareObNames);
+      //  }
+      //  else{
+     //       wayPoints = GameObject.FindGameObjectsWithTag("Waypoints2");
+      //      Array.Sort(wayPoints, CompareObNames);
+     //   }
         m_Material = GetComponent<Renderer>().material;
 
         // Get the sound component
-        popSound = GameObject.FindGameObjectWithTag("PopSound");
+     //   popSound = GameObject.FindGameObjectWithTag("PopSound");
 
         // Get bloonCountDisplay
-        bloonCountDisplay = GameObject.FindGameObjectWithTag("BloonCountDisplay");
-    } */
+      //  bloonCountDisplay = GameObject.FindGameObjectWithTag("BloonCountDisplay");
+    } 
 
     // Call Update Once Per Frame
     void Update(){
@@ -51,19 +51,26 @@ public class Bloons : MonoBehaviour{
         else if (health == 1){
             m_Material.color = Color.green; 
         }
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other){
         if(other.CompareTag("Dart"))
         {
             health--;
-            bloonCountDisplay.GetComponent<DisplayText>().BloonPopIncrease();
-            popSound.GetComponent<PopSound>().PlayPop();
-            if (health <= 0){
+            //bloonCountDisplay.GetComponent<DisplayText>().BloonPopIncrease();
+            //popSound.GetComponent<PopSound>().PlayPop();
+            if (health == 2){
+            m_Material.color = Color.blue;
+            }
+            else if (health == 1){
+            m_Material.color = Color.green; 
+            }
+            else if (health <= 0){
+            
                 Destroy(this.gameObject);
             }
         }
-    }*/
+    }
 
     private void MoveBloon(){
         var lastWayPointIndex = wayPoints.Length -1;
