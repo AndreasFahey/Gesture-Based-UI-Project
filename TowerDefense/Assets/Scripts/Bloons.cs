@@ -7,7 +7,7 @@ public class Bloons : MonoBehaviour{
     //public GameObject popSound;
     //public GameObject bloonCountDisplay;
     public GameObject[] wayPoints;
-    //public GameObject[] wayPoints2;
+    public GameObject[] wayPoints2;
     private int nextWayPointIndex = 0;
     public int health = 1;
     public float speed = 1;
