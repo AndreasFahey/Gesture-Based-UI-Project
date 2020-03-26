@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2599055431826998928}
   - component: {fileID: 6898900913710587281}
   m_Layer: 0
-  m_Name: WayPoint (17)
+  m_Name: WayPoint 2
   m_TagString: Waypoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7790913327820529262}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

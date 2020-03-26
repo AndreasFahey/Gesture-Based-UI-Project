@@ -61,31 +61,31 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11388}
+      Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 11532}
     - Class: 114
-      Script: {instanceID: 11756}
+      Script: {instanceID: 11754}
     - Class: 114
-      Script: {instanceID: 11858}
+      Script: {instanceID: 11856}
     - Class: 114
-      Script: {instanceID: 12094}
+      Script: {instanceID: 12092}
     - Class: 114
-      Script: {instanceID: 12332}
+      Script: {instanceID: 12330}
     - Class: 114
-      Script: {instanceID: 12484}
+      Script: {instanceID: 12482}
     - Class: 114
-      Script: {instanceID: 12594}
+      Script: {instanceID: 12592}
     - Class: 114
-      Script: {instanceID: 12886}
+      Script: {instanceID: 12884}
     - Class: 114
-      Script: {instanceID: 12970}
+      Script: {instanceID: 12968}
     - Class: 114
-      Script: {instanceID: 13170}
+      Script: {instanceID: 13168}
     - Class: 114
-      Script: {instanceID: 13554}
+      Script: {instanceID: 13552}
     - Class: 114
-      Script: {instanceID: 13774}
+      Script: {instanceID: 13772}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -1695,6 +1695,30 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 325144449d27b7ceeb3db6eaf78f3c3c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SkyboxChanger
+  - hash:
+      serializedVersion: 2
+      Hash: 2d143e103df2247787ec7ae04cb6eb28
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FPSWalkerEnhanced
+  - hash:
+      serializedVersion: 2
+      Hash: 5111780fd6e841a48fa1fc53d36de3e6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SkyboxRotator
+  - hash:
+      serializedVersion: 2
+      Hash: c6d94e38a727101dd467b56d57d9c12f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SmoothMouseLook
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
