@@ -4,7 +4,7 @@ using UnityEngine;
 public class Bloons : MonoBehaviour{
 
     // Variables
-    //public GameObject popSound;
+    public GameObject popSound;
     //public GameObject bloonCountDisplay;
     public GameObject[] wayPoints;
     public GameObject[] wayPoints2;
@@ -29,7 +29,7 @@ public class Bloons : MonoBehaviour{
         m_Material = GetComponent<Renderer>().material;
 
         // Get the sound component
-     //   popSound = GameObject.FindGameObjectWithTag("PopSound");
+        popSound = GameObject.FindGameObjectWithTag("PopSound");
 
         // Get bloonCountDisplay
       //  bloonCountDisplay = GameObject.FindGameObjectWithTag("BloonCountDisplay");
@@ -58,7 +58,7 @@ public class Bloons : MonoBehaviour{
         {
             health--;
             //bloonCountDisplay.GetComponent<DisplayText>().BloonPopIncrease();
-            //popSound.GetComponent<PopSound>().PlayPop();
+            popSound.GetComponent<PopSound>().PlayPop();
             if (health <= 0){
             
                 Destroy(this.gameObject);
