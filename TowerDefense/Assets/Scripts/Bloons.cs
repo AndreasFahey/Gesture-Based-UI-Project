@@ -5,7 +5,7 @@ public class Bloons : MonoBehaviour{
 
     // Variables
     public GameObject popSound;
-    //public GameObject bloonCountDisplay;
+    public GameObject bloonCountDisplay;
     public GameObject[] wayPoints;
     public GameObject[] wayPoints2;
     private int nextWayPointIndex = 0;
@@ -32,7 +32,7 @@ public class Bloons : MonoBehaviour{
         popSound = GameObject.FindGameObjectWithTag("PopSound");
 
         // Get bloonCountDisplay
-      //  bloonCountDisplay = GameObject.FindGameObjectWithTag("BloonCountDisplay");
+        bloonCountDisplay = GameObject.FindGameObjectWithTag("BloonCountDisplay");
     } 
 
     // Call Update Once Per Frame
@@ -57,7 +57,7 @@ public class Bloons : MonoBehaviour{
         if(other.CompareTag("Dart"))
         {
             health--;
-            //bloonCountDisplay.GetComponent<DisplayText>().BloonPopIncrease();
+            bloonCountDisplay.GetComponent<DisplayText>().BloonPopIncrease();
             popSound.GetComponent<PopSound>().PlayPop();
             if (health <= 0){
             
@@ -86,7 +86,7 @@ public class Bloons : MonoBehaviour{
 
         // Bloon at the Finish
         if (nextWayPointIndex == lastWayPointIndex && Vector3.Distance(transform.position, lastWayPoint) < 0.5f){
-            //bloonCountDisplay.GetComponent<DisplayText>().LivesDecrease();
+            bloonCountDisplay.GetComponent<DisplayText>().LivesDecrease();
             Destroy(this.gameObject);
         }
     }
