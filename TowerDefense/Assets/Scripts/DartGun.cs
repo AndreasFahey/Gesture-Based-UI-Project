@@ -4,9 +4,14 @@ public class DartGun : MonoBehaviour
 {
     // Variables
     public GameObject dartPrefab;
+    public GameObject fireSound;
     public Transform FirePoint;
     public float shotPower = 1000f;
 
+    void Start ()
+    {
+        fireSound = GameObject.FindGameObjectWithTag("FireSound");
+    }
     void Update ()
     {
         // Test if the player is pulling the trigger
@@ -28,5 +33,7 @@ public class DartGun : MonoBehaviour
 
             // After X amount of seconds, Destroy The Dart
             Destroy(dart, 3f);
+
+            fireSound.GetComponent<FireSound>().PlayFire();
     }
 }
