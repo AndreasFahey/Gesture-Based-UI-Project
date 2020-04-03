@@ -70,23 +70,23 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11410}
+      Script: {instanceID: 11408}
     - Class: 114
-      Script: {instanceID: 11556}
+      Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11778}
+      Script: {instanceID: 11776}
     - Class: 114
-      Script: {instanceID: 11880}
+      Script: {instanceID: 11878}
     - Class: 114
-      Script: {instanceID: 12116}
+      Script: {instanceID: 12114}
     - Class: 114
-      Script: {instanceID: 12266}
+      Script: {instanceID: 12264}
     - Class: 114
-      Script: {instanceID: 12354}
+      Script: {instanceID: 12352}
     - Class: 114
-      Script: {instanceID: 12506}
+      Script: {instanceID: 12504}
     - Class: 114
-      Script: {instanceID: 12616}
+      Script: {instanceID: 12614}
     - Class: 114
       Script: {instanceID: 12908}
     - Class: 114
@@ -918,6 +918,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LocomotionController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
   - hash:
       serializedVersion: 2
       Hash: 45f2a4e63a8b43166e3f85c4d543f00d
