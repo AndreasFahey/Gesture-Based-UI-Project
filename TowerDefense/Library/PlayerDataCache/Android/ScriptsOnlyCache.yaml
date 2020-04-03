@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - Bloons
     - DartGun
     - DisplayText
+    - FireSound
     - ONSPSettings
     - PopSound
     - Waves
@@ -70,43 +71,45 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11408}
+      Script: {instanceID: 11416}
     - Class: 114
-      Script: {instanceID: 11554}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 11776}
+      Script: {instanceID: 11784}
     - Class: 114
-      Script: {instanceID: 11878}
+      Script: {instanceID: 11886}
     - Class: 114
-      Script: {instanceID: 12114}
+      Script: {instanceID: 12122}
     - Class: 114
-      Script: {instanceID: 12264}
+      Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 12352}
+      Script: {instanceID: 12360}
     - Class: 114
-      Script: {instanceID: 12504}
+      Script: {instanceID: 12512}
     - Class: 114
-      Script: {instanceID: 12614}
+      Script: {instanceID: 12622}
     - Class: 114
-      Script: {instanceID: 12908}
+      Script: {instanceID: 12916}
     - Class: 114
-      Script: {instanceID: 12992}
+      Script: {instanceID: 13000}
     - Class: 114
-      Script: {instanceID: 13170}
+      Script: {instanceID: 13178}
     - Class: 114
-      Script: {instanceID: 13188}
+      Script: {instanceID: 13196}
     - Class: 114
-      Script: {instanceID: 13192}
+      Script: {instanceID: 13200}
     - Class: 114
-      Script: {instanceID: 13468}
+      Script: {instanceID: 13476}
     - Class: 114
-      Script: {instanceID: 13578}
+      Script: {instanceID: 13586}
     - Class: 114
-      Script: {instanceID: 13758}
+      Script: {instanceID: 13612}
     - Class: 114
-      Script: {instanceID: 13798}
+      Script: {instanceID: 13768}
     - Class: 114
-      Script: {instanceID: 13900}
+      Script: {instanceID: 13808}
+    - Class: 114
+      Script: {instanceID: 13910}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1466,6 +1469,12 @@ ScriptsOnlyBuild:
     className: PanelHMDFollower
   - hash:
       serializedVersion: 2
+      Hash: e27316cfce94043d3a3fd986738155bd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FireSound
+  - hash:
+      serializedVersion: 2
       Hash: 76b80dd1b65f63dfa63cf0ea8a906f3a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1526,7 +1535,7 @@ ScriptsOnlyBuild:
     className: VREyeRaycaster
   - hash:
       serializedVersion: 2
-      Hash: fb68f33f40155dd9a3dbc9a24303329d
+      Hash: 41cc579928ca90bea3f2153f886ad603
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DartGun

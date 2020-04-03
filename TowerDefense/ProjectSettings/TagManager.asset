@@ -9,6 +9,7 @@ TagManager:
   - PopSound
   - Waypoints2
   - BloonCountDisplay
+  - FireSound
   layers:
   - Default
   - TransparentFX
