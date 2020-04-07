@@ -30,6 +30,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -71,45 +74,49 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11416}
+      Script: {instanceID: 11408}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11784}
+      Script: {instanceID: 11776}
     - Class: 114
-      Script: {instanceID: 11886}
+      Script: {instanceID: 11878}
     - Class: 114
-      Script: {instanceID: 12122}
+      Script: {instanceID: 12114}
     - Class: 114
-      Script: {instanceID: 12272}
+      Script: {instanceID: 12218}
     - Class: 114
-      Script: {instanceID: 12360}
+      Script: {instanceID: 12264}
     - Class: 114
-      Script: {instanceID: 12512}
+      Script: {instanceID: 12352}
     - Class: 114
-      Script: {instanceID: 12622}
+      Script: {instanceID: 12504}
     - Class: 114
-      Script: {instanceID: 12916}
+      Script: {instanceID: 12614}
     - Class: 114
-      Script: {instanceID: 13000}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13178}
+      Script: {instanceID: 12992}
     - Class: 114
-      Script: {instanceID: 13196}
+      Script: {instanceID: 13170}
     - Class: 114
-      Script: {instanceID: 13200}
+      Script: {instanceID: 13188}
     - Class: 114
-      Script: {instanceID: 13476}
+      Script: {instanceID: 13192}
     - Class: 114
-      Script: {instanceID: 13586}
+      Script: {instanceID: 13468}
     - Class: 114
-      Script: {instanceID: 13612}
+      Script: {instanceID: 13578}
     - Class: 114
-      Script: {instanceID: 13768}
+      Script: {instanceID: 13604}
     - Class: 114
-      Script: {instanceID: 13808}
+      Script: {instanceID: 13760}
     - Class: 114
-      Script: {instanceID: 13910}
+      Script: {instanceID: 13800}
+    - Class: 114
+      Script: {instanceID: 13902}
+    - Class: 114
+      Script: {instanceID: 14066}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1746,4 +1753,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/joeyg/OneDrive/Desktop/Gesture-Based-UI-Project/TowerDefense/TDefense.apk
+  playerPath: C:/Users/Danzax/Desktop/TD/Gesture-Based-UI-Project/TowerDefense/TDefense.apk
