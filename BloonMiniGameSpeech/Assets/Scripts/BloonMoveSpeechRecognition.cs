@@ -7,8 +7,9 @@ using UnityEngine.Windows.Speech;
 
 public class BloonMoveSpeechRecognition : MonoBehaviour
 {
+   
     // Variables
-    public string[] keywords = new string[] { "up", "down", "left", "right" };
+    public string[] keywords = new string[] { "up", "down", "left", "right"};
     public ConfidenceLevel confidence = ConfidenceLevel.Medium;
     public float speed = 1;
 
@@ -23,6 +24,7 @@ public class BloonMoveSpeechRecognition : MonoBehaviour
     {
         if (keywords != null)
         {
+
             recognizer = new KeywordRecognizer(keywords, confidence);
             recognizer.OnPhraseRecognized += Recognizer_OnPhraseRecognized;
             recognizer.Start();

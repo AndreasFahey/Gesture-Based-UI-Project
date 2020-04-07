@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -333, y: 154}
-  m_SizeDelta: {x: 210, y: 30}
+  m_AnchoredPosition: {x: -289, y: 154}
+  m_SizeDelta: {x: 300, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &102994627
 MonoBehaviour:
@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Say "up", "down", "left" or "right"
+  m_Text: Say "up", "down", "left", "right", "stop" or "go"
 --- !u!222 &102994628
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -701,6 +701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1725340007}
+  - component: {fileID: 1725340008}
   m_Layer: 0
   m_Name: SpeechRecognition
   m_TagString: Untagged
@@ -722,6 +723,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1725340008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725340006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f914852af3e466f429681922c1eda075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keywords:
+  - up
+  - down
+  - left
+  - right
+  confidence: 3
+  speed: 0.2
+  results: {fileID: 751244242}
+  Bloon: {fileID: 1731039230}
 --- !u!1 &1731039228
 GameObject:
   m_ObjectHideFlags: 0
