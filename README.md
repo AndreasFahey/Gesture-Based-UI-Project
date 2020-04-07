@@ -16,7 +16,7 @@ To download and play this game:
 We were tasked to make an application with gesture based hardware/software in which we made a Virtual Reality version of the well known existing game called Bloons Tower Defence. To make this game we used the Oculus Quest Headset which was available to us through the college. To buy this VR Headset would be very exepensive so we'd like to thank GMIT for the loan of the hardware that enabled us to complete this project. 
 
 We developed this game in Unity version 2019.3.3f1 and had to add Android modules to the Unity Version in Unity Hub to do this project:
-![Unity Modules Add On](/readmeimages/unity-android.PNG.png)
+![Unity Modules Add On](/readmeimages/unity-android.PNG)
 
 The Objective of the game is to shoot and pop the incoming balloons before they reach their desired waypoints. For this game we made 2 different way points. If a balloon reaches the end of the waypoint the player loses a life. The balloons come in waves and the player must keep shooting the balloons before they reach the end of the desired waypoints to survive. If you look at this video: https://www.youtube.com/watch?v=8zG-Zs2J_N0 this shows how the game is played if you are only unfamiliar with the original game. We made this game in our own way in virtual reality using the oculus quest headset with custom music and sound affects.
 
